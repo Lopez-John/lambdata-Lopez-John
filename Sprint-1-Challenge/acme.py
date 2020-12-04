@@ -32,7 +32,7 @@ class Product:
         """Determine how explodable a product is"""
         explodable = self.flammability * self.weight
         if explodable < 10:
-            return '...fizzle'
+            return '...fizzle.'
         elif explodable >= 50:
             return '...BABOOM!!'
         else:
@@ -55,7 +55,7 @@ class BoxingGlove(Product):
 
     def punch(self):
         if self.weight < 5:
-            return 'That tickles'
+            return 'That tickles.'
         elif self.weight >= 15:
             return 'OUCH!'
         else:

@@ -41,5 +41,6 @@ def inventory_report(products):
     print('Average weight: ', mean_weight)
     print('Average flammability ', mean_flammability)
 
+
 if __name__ == '__main__':
     inventory_report(generate_products())
