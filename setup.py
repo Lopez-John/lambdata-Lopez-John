@@ -11,7 +11,7 @@ with open('README.md', 'r') as fh:
 
 setuptools.setup(
     name = 'lambdata_Lopez_John',
-    version='0.0.3',
+    version='0.0.4',
     author='Lopez-John',
     description=LONG_DESCRIPTION,
     long_description_contents='text/markdown',
