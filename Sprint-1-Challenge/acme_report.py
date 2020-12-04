@@ -1,18 +1,25 @@
+"""Generates an inventory report"""
+
 from random import randint, sample, uniform
 from acme import Product
 
 ADJECTIVES = ['Awesome', 'Shiny', 'Impressive', 'Portable', 'Improved']
 NOUNS = ['Anvil', 'Catapult', 'Disguise', 'Mousetrap', '???']
 
+
 def generate_products(num_products=30):
     products = []
-    for i in range(0,num_products):
-        prod = Product(name = sample(ADJECTIVES, 1)[0] + ' ' + sample(NOUNS,1)[0], 
-                        price = randint(5,100), 
-                        weight = randint(5,100), 
+    for i in range(0, num_products):
+        prod = Product(
+                        name=sample(ADJECTIVES, 1)[0] +
+                        ' ' +
+                        sample(NOUNS, 1)[0],
+                        price=randint(5, 100),
+                        weight=randint(5, 100),
                         flammability=uniform(0.0, 2.5))
         products.append(prod)
     return products
+
 
 def inventory_report(products):
     prices = []
@@ -36,7 +43,3 @@ def inventory_report(products):
 
 if __name__ == '__main__':
     inventory_report(generate_products())
-
-
-        
-

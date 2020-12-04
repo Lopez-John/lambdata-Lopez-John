@@ -4,7 +4,13 @@ from random import randint
 
 
 class Product:
-    def __init__(self, name, price=10, weight=20, flammability=0.5, identifier=randint(1000000, 9999999)):
+    def __init__(
+                self,
+                name,
+                price=10,
+                weight=20,
+                flammability=0.5,
+                identifier=randint(1000000, 9999999)):
         """Constructor for Product object"""
         self.name = str(name)
         self.price = int(price)
@@ -20,7 +26,7 @@ class Product:
         elif ratio >= 1.0:
             return 'Very stealable!'
         else:
-            return 'Kinda Stealable'
+            return 'Kinda Stealable.'
 
     def explode(self):
         """Determine how explodable a product is"""
@@ -28,13 +34,19 @@ class Product:
         if explodable < 10:
             return '...fizzle'
         elif explodable >= 50:
-            return '...BABOOM!!'     
+            return '...BABOOM!!'
         else:
             return '...boom!'
 
 
 class BoxingGlove(Product):
-    def __init__(self, name, price=10, weight=10, flammability=0.5, identifier=randint(1000000, 9999999)):
+    def __init__(
+                self,
+                name,
+                price=10,
+                weight=10,
+                flammability=0.5,
+                identifier=randint(1000000, 9999999)):
         """Constructor for a Boxing Glove"""
         super().__init__(name, price, weight, flammability, identifier)
 
@@ -44,7 +56,7 @@ class BoxingGlove(Product):
     def punch(self):
         if self.weight < 5:
             return 'That tickles'
-        elif self.weight >= 5 < 15:
-            return 'Hey that hurt!'
-        else:
+        elif self.weight >= 15:
             return 'OUCH!'
+        else:
+            return 'Hey that hurt!'
