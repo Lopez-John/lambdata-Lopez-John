@@ -23,5 +23,8 @@ class NewDataFrameTests(unittest.TestCase):
         """Tests list_2_series method"""
         self.assertEqual(self.df1.list_2_series(list).shape, (10, 5))
 
+    def test_split_dates(self):
+        """Test split_dates method"""
+
 if __name__ == "__main__":
     unittest.main()
