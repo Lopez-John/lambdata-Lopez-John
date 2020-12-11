@@ -6,7 +6,7 @@ import psycopg2
 
 DBNAME = 'ytwptqxp'
 USER = 'ytwptqxp'
-PASSWORD = 'jDQN23vmEUoCbvVehUkGRmCm11QTuIup'
+PASSWORD = '***'
 HOST = 'suleiman.db.elephantsql.com'
 
 #Queries
