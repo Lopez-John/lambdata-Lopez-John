@@ -3,7 +3,7 @@ import sqlite3
 import pymongo
 
 
-PASSWORD = "A2oU0l8VMXjYp2sh"
+PASSWORD = "***"
 DBNAME ="test"
 
 #Local SQLite DV
